@@ -1,0 +1,68 @@
+/* You can add global styles to this file, and also import other style files */
+.row{
+	background: orange;
+	height:100vh;
+}
+.main {
+	height: 100vh;
+}
+.letters{
+	background: green;
+	height: 100vh;
+}
+.nopadding {
+   padding: 0 !important;
+   margin: 0 !important;
+}
+.input-group{
+	width: 500px;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+.form-group{
+	width: 500px;
+
+
+	}
+
+	.letters-btn{
+		position: absolute;
+		padding-left: -25%;
+	}
+.letter{
+	position: relative;
+	display:block;
+    height:15vh;
+    width:15vh;
+    margin-bottom: 30%;
+    text-align: center;
+     line-height:70px;
+     text-decoration: none;
+}
+.s{
+	width: 450px;
+	margin: 0 auto;
+	
+	
+}
+
+.vertical-center-row {
+    display: table-cell;
+    vertical-align: middle;
+}
+.container-table {
+    display: table;
+    width: 100%;
+    height:100%;
+}
+li{
+	list-style: none;
+	font-size: 24px;
+	color: white;
+	border: 2px solid black;
+
+}
+.list{
+	background: pink;
+	height: 100vh;
+}

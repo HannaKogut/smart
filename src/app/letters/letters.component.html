@@ -1,0 +1,33 @@
+<div class="container-fluid">
+	<div class="row">
+		<div class="col-md-1 nopadding letters">
+			<div class="letters-btn">
+				<div><a href="#"  class="letter" ><img src="../if_letter_S_red_1553075.png" [@focusPanel]='state' >
+				</a></div>
+				<div><a href="#" class="letter"><img src="../if_letter_M_red_1553083.png" ></a></div>
+				<div><a href="#" class="letter"><img src="../if_letter_A_blue_1553103.png"></a></div>
+				<div><a href="#" class="letter"><img src="../if_letter_R_blue_1553067.png"></a></div>
+				<div><a href="#" class="letter"><img src="../if_letter_T_red_1553036.png"></a></div>
+			</div>
+		</div>	
+		<div class="col-md-9 main">
+			<form (submit) = "addGoal($event)">
+				<div class="form-group" class="text-center">
+					<div class="input-group" [@inputPanel] = "inp" >			
+    					<input  type='text' class="form-control width100" placeholder="Type your main goal here..."  name="something" [(ngModel)] = "goal">
+    						<div class="input-group-btn">
+        						<input class="btn btn-default"  name = "Input" type="submit" (click) = "inputSlice()" (click)="toggleMove()" (click) = 'showInput()'  >		
+    						</div>
+    			 	 </div>
+    			  	<input type="text" [@hideInput]='hid' class="form-control width100 s"  placeholder="Type your S goal here...">
+    			</div>
+			</form> 
+		</div>
+			<div class="col-md-2 list">
+			<ul >
+        		<li *ngFor='let goal of goals'>{{goal.goal}} <button type = "submit" class="glyphicon-remove" (click) = "deleteGoal(goal._id)"></button></li>
+
+        	</ul>
+		</div>						
+	</div>
+</div>
